@@ -127,7 +127,7 @@ main{
                     justify-content: space-between;
                 }
                 .similar-musics{
-                    display: none;
+                    display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     height: 1050px;
@@ -184,7 +184,6 @@ main{
                 .main-player{
                     width: 592px;
                     height:max-content ;
-                    background-color: red;
                     margin-bottom: 20px;
                     display: flex;
                     flex-direction: column;
@@ -192,31 +191,60 @@ main{
                     .music-header{
                         width: 100%;
                         height: 100px;
-                        background-color: yellow;
                         display: flex;
                         justify-content: space-between;
-                        .aboutmusic{
-                        .a{
+                        margin-bottom: 10px;
+                        .services{
+                            margin-left: 0px;
                             width: 129px;
                             height: 103px;
-                            background-color: green;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            div{
+                                font-family: 'Raleway';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: #AFAFAF;
+                            }
                         } 
-                        .b{
+                        .services__info{
+                            margin-right: 200px;
                             width: 129px;
                             height: 103px;
-                            background-color: green;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            div{
+                                font-family: 'Raleway';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: #323232;
+                            }
                         }
-                    }
+                    
                     }
                     .music-buttons{
                         width: 100%;
                         height: 44px;
-                        background-color: red;
+                        background-color: yellow;
                     }
                     .music-text{
+                        margin-top: 10px;
                         width: 100%;
                         height:max-content;
-                        background-color: red;
+                        p{
+                            font-family: 'Raleway';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 16px;
+                            color: #323232;
+                        }
                     }
 
                 }
@@ -237,6 +265,15 @@ main{
                     line-height: 19px;
                     color: #000000;
                     margin-bottom: 20px;
+                }
+                h3{
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 42px;
+                    color: #323232;
+                    margin-bottom: 70px;
                 }
             }
             .sections{
@@ -276,7 +313,8 @@ main{
                             font-size: 16px;
                             line-height: 19px;
                             color: #323232;
-                            list-style-image:url(../icons/square.svg);                            
+                            list-style-image:url(../icons/square.svg);  
+                            cursor: pointer;                          
                         }
                     
                     }
@@ -398,6 +436,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 20px;
     .footer-content{
         width: 100%;
         height: 100%;
@@ -445,7 +484,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    // display: none;
+    display: none;
     .player-content{
         position: fixed;
         bottom: 0;

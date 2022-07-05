@@ -11,7 +11,9 @@ playMusic.forEach((item)=>{
     popularContent.style.display = 'none';
    });
 });
-// a.style.display ='none';
+function adds(){
+a.style.display ='none';
+}
 
 fullTextBtn.addEventListener('click' , function(){
     fullText.innerHTML =`
@@ -34,8 +36,7 @@ Mensiz baxtga yetganingda<br>
 Qara sensiz qayga kettim<br>
 O'ldirdingga dengizida cho'kib kettim<br>
 Dunyoning toshlariga mehir qo'ygan bag'ritosh<br> 
-<button class="full__text-close">o'chir</button>
-
+<button class="full__text-close" onclick='${a.style.display ='none'}'>o'chir</button>
 `;
 });
 a.addEventListener('click', function(){
