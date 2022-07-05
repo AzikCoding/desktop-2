@@ -1450,7 +1450,7 @@ footer .footer-content .ad {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 900px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   header {
     width: 95%;
     height: 55px;
