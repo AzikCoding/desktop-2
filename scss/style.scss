@@ -192,7 +192,21 @@ main{
                     .music-header{
                         width: 100%;
                         height: 100px;
-                        background-color: red;
+                        background-color: yellow;
+                        display: flex;
+                        justify-content: space-between;
+                        .aboutmusic{
+                        .a{
+                            width: 129px;
+                            height: 103px;
+                            background-color: green;
+                        } 
+                        .b{
+                            width: 129px;
+                            height: 103px;
+                            background-color: green;
+                        }
+                    }
                     }
                     .music-buttons{
                         width: 100%;
