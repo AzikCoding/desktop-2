@@ -5,11 +5,11 @@ let toggle = document.querySelector('.toggle'),
     console.log( 'menu', menu);
     console.log( 'close', close);
     toggle.addEventListener('click' , function(){
-        menu.style.left = '0';
+        menu.style.marginLeft = '0';
         console.log(1)
     })
     menu.addEventListener('click' , function(){
-        menu.style.left = '-100%';
+        menu.style.marginLeft = '-100%';
         console.log(1)
     })
 

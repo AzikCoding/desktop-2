@@ -21,7 +21,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #E5E5E5;
+  background: #F8F3FE;
   height: 100%;
 }
 
@@ -131,7 +131,7 @@ header .header-content .toggle {
 .search input {
   width: 55%;
   height: 50px;
-  background-color: #F8F3FE;
+  background: rgba(230, 218, 244, 0.82);
   border-radius: 95px;
   border: none;
   padding: 0 19px 0 0;
@@ -146,7 +146,8 @@ header .header-content .toggle {
 .search input::-webkit-input-placeholder {
   text-align: center;
   font-family: 'Raleway';
-  font-weight: 700;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #868686;
@@ -155,7 +156,8 @@ header .header-content .toggle {
 .search input:-ms-input-placeholder {
   text-align: center;
   font-family: 'Raleway';
-  font-weight: 700;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #868686;
@@ -164,7 +166,8 @@ header .header-content .toggle {
 .search input::-ms-input-placeholder {
   text-align: center;
   font-family: 'Raleway';
-  font-weight: 700;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #868686;
@@ -173,7 +176,8 @@ header .header-content .toggle {
 .search input::placeholder {
   text-align: center;
   font-family: 'Raleway';
-  font-weight: 700;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #868686;
@@ -267,7 +271,7 @@ main .main-content .main-musics .musics .similar-musics {
 
 main .main-content .main-musics .musics .music {
   width: 90%;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   background-color: rgba(150, 80, 233, 0.1);
   border-radius: 10px;
   display: -webkit-box;
@@ -515,7 +519,7 @@ main .main-content .main-musics .musics h3 {
 
 main .main-content .main-musics .sections {
   width: 330px;
-  height: 1040px;
+  height: 1000px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -526,6 +530,7 @@ main .main-content .main-musics .sections {
 }
 
 main .main-content .main-musics .sections .category {
+  margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,6 +548,7 @@ main .main-content .main-musics .sections .category {
   height: 500px;
   background-color: rgba(150, 80, 233, 0.05);
   border-radius: 15px;
+  padding: 5px;
 }
 
 main .main-content .main-musics .sections .category h2 {
@@ -583,6 +589,7 @@ main .main-content .main-musics .sections .category ul li {
 }
 
 main .main-content .main-musics .sections .new-musics {
+  margin-bottom: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -596,11 +603,12 @@ main .main-content .main-musics .sections .new-musics {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 10px;
+  margin-top: 50px;
   width: 330px;
   height: 500px;
   background-color: rgba(150, 80, 233, 0.05);
   border-radius: 15px;
+  padding: 5px;
 }
 
 main .main-content .main-musics .sections .new-musics h2 {
@@ -680,6 +688,7 @@ main .main-content .main-musics .sections .new-musics .music .about-music .music
 }
 
 main .tabheader {
+  margin-top: 150px;
   width: 100%;
   height: 40px;
   display: -webkit-box;
@@ -691,7 +700,6 @@ main .tabheader {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: none;
 }
 
 main .tabheader .tabheader-items {
@@ -717,13 +725,18 @@ main .tabheader .tabheader-items .tabheader__item {
           align-items: center;
   width: 24px;
   height: 24px;
-  background-color: #9650E9;
+  background: rgba(230, 218, 244, 0.82);
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+  cursor: pointer;
+}
+
+main .tabheader .tabheader-items .active {
+  background-color: #9650E9;
 }
 
 main .tabheader .tabheader-items .none {
@@ -804,7 +817,8 @@ footer .footer-content .ad {
 }
 
 .player {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   bottom: 0;
   margin-top: 50px;
   width: 80%;
@@ -824,6 +838,7 @@ footer .footer-content .ad {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: none;
 }
 
 .player .music-info {
@@ -929,6 +944,13 @@ footer .footer-content .ad {
   border-radius: 6px;
 }
 
+.player .player-length .length .e {
+  width: 20%;
+  height: 100%;
+  background-color: red;
+  border-radius: 6px;
+}
+
 .modal-category {
   display: none;
 }
@@ -938,7 +960,6 @@ footer .footer-content .ad {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
-    background-color: #E5E5E5;
     padding-bottom: 100px;
   }
   header {
@@ -985,50 +1006,6 @@ footer .footer-content .ad {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .search input {
-    width: 100%;
-    height: 50px;
-    background-color: #F8F3FE;
-    border-radius: 95px;
-    border: none;
-    padding: 0 19px 0 0;
-  }
-  .search input::-webkit-input-placeholder {
-    text-align: left;
-    padding-left: 20px;
-    font-family: 'Raleway';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #868686;
-  }
-  .search input:-ms-input-placeholder {
-    text-align: left;
-    padding-left: 20px;
-    font-family: 'Raleway';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #868686;
-  }
-  .search input::-ms-input-placeholder {
-    text-align: left;
-    padding-left: 20px;
-    font-family: 'Raleway';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #868686;
-  }
-  .search input::placeholder {
-    text-align: left;
-    padding-left: 20px;
-    font-family: 'Raleway';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #868686;
   }
   .search .search-icon {
     position: absolute;
@@ -1388,14 +1365,15 @@ footer .footer-content .ad {
             flex-direction: column;
   }
   .modal-category {
-    -webkit-transition: 0.3 ease;
-    transition: 0.3 ease;
+    -webkit-transition: 1.5s ease;
+    transition: 1.5s ease;
     width: 80vw;
     height: 100vh;
     background-color: white;
     position: absolute;
     top: 0;
-    left: -100%;
+    left: 0;
+    margin-left: -100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
