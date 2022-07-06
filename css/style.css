@@ -612,6 +612,7 @@ main .main-content .main-musics .sections .new-musics {
 }
 
 main .main-content .main-musics .sections .new-musics h2 {
+  margin-top: 20px;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
