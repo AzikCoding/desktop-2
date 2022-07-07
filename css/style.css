@@ -129,6 +129,7 @@ header .header-content .toggle {
 }
 
 .search input {
+  padding-left: 25px;
   width: 100%;
   height: 100%;
   background: rgba(230, 218, 244, 0.82);
@@ -605,7 +606,6 @@ main .main-content .main-musics .sections .category ul li {
 }
 
 main .main-content .main-musics .sections .new-musics {
-  margin-bottom: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -621,14 +621,16 @@ main .main-content .main-musics .sections .new-musics {
           align-items: center;
   margin-top: 50px;
   width: 330px;
-  height: 500px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   background-color: rgba(150, 80, 233, 0.05);
   border-radius: 15px;
   padding: 5px;
 }
 
 main .main-content .main-musics .sections .new-musics h2 {
-  margin-top: 20px;
+  margin-bottom: 35px;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -838,7 +840,10 @@ footer .footer-content .ad {
   position: sticky;
   bottom: 0;
   margin-top: 50px;
-  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 80%;
+  border-radius: 20px;
   height: 202px;
   background-color: #A47ECF;
   display: -webkit-box;
@@ -1374,6 +1379,69 @@ footer .footer-content .ad {
   main .main-content .main-musics .sections .new-musics {
     display: none;
   }
+  main .main-content .tabheader {
+    margin-top: 150px;
+    width: 100%;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .main-content .tabheader .tabheader-items {
+    width: 55%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .main-content .tabheader .tabheader-items .tabheader__item {
+    border-radius: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 24px;
+    height: 24px;
+    background: rgba(230, 218, 244, 0.82);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  main .main-content .tabheader .tabheader-items .active {
+    background-color: #9650E9;
+  }
+  main .main-content .tabheader .tabheader-items .none {
+    background-color: rgba(150, 80, 233, 0.1);
+    width: 40px;
+    height: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: black;
+  }
   footer .footer-content {
     height: 250px;
     display: -webkit-box;
@@ -1797,7 +1865,6 @@ footer .footer-content .ad {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    display: none;
   }
   main .tabheader .tabheader-items {
     width: 25%;
