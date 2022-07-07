@@ -1232,6 +1232,7 @@ footer .footer-content .ad {
             justify-content: space-between;
     margin-top: 5px;
     margin-bottom: 10px;
+    margin-right: 40px;
   }
   main .main-content .main-musics .musics .main-player .music-header .service .services div {
     font-family: 'Raleway';
@@ -1282,6 +1283,7 @@ footer .footer-content .ad {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 20px;
+    margin-right: 40px;
   }
   main .main-content .main-musics .musics .main-player .music-buttons div {
     display: -webkit-box;
@@ -1293,15 +1295,15 @@ footer .footer-content .ad {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-right: 28px;
-    padding-left: 25px;
     width: 170px;
     height: 44px;
-    margin: 0 auto;
-    margin-left: 10px;
   }
   main .main-content .main-musics .musics .main-player .music-buttons div p {
     margin-right: 20px;
+  }
+  main .main-content .main-musics .musics .main-player .music-buttons .play-btn {
+    padding: 0 25px;
+    margin-right: 10px;
   }
   main .main-content .main-musics .musics .main-player .music-text {
     display: none;

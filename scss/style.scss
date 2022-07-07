@@ -794,6 +794,7 @@ main{
                             justify-content: space-between;
                             margin-top: 5px;
                             margin-bottom: 10px;
+                            margin-right: 40px;
                             div{
                                 font-family: 'Raleway';
                                 font-style: normal;
@@ -833,19 +834,20 @@ main{
                         justify-content: space-between;
                         align-items: center;
                         margin-top: 20px;
+                        margin-right: 40px;
                         div{
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            padding-right: 28px;
-                            padding-left: 25px;
                             width: 170px;
                             height: 44px;
-                            margin: 0 auto;       
-                            margin-left: 10px;
                             p{
                                 margin-right: 20px;
                             }
+                        }
+                        .play-btn{
+                            padding: 0 25px;
+                            margin-right: 10px;
                         }
                     }
                     .music-text{
