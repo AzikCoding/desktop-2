@@ -89,12 +89,12 @@ header .header-content nav ul li {
   font-size: 16px;
   line-height: 19px;
   list-style: none;
-  -webkit-transition: 0.4 ease;
-  transition: 0.4 ease;
 }
 
 header .header-content nav ul li:hover a {
   color: #9650E9;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
 }
 
 header .header-content nav ul li a {
@@ -113,7 +113,7 @@ header .header-content .toggle {
 
 .search {
   margin: 0 auto;
-  width: 80%;
+  width: 40%;
   height: 50px;
   margin-top: 10px;
   display: -webkit-box;
@@ -129,8 +129,8 @@ header .header-content .toggle {
 }
 
 .search input {
-  width: 55%;
-  height: 50px;
+  width: 100%;
+  height: 100%;
   background: rgba(230, 218, 244, 0.82);
   border-radius: 95px;
   border: none;
@@ -185,7 +185,8 @@ header .header-content .toggle {
 
 .search .search-icon {
   position: absolute;
-  right: 300px;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
 }
 
@@ -267,6 +268,7 @@ main .main-content .main-musics .musics .similar-musics {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 1050px;
+  display: none;
 }
 
 main .main-content .main-musics .musics .music {
@@ -371,8 +373,17 @@ main .main-content .main-musics .musics .main-player .music-header {
   margin-bottom: 10px;
 }
 
-main .main-content .main-musics .musics .main-player .music-header .services {
-  margin-left: 0px;
+main .main-content .main-musics .musics .main-player .music-header .service {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .main-content .main-musics .musics .main-player .music-header .service .services {
   width: 129px;
   height: 103px;
   display: -webkit-box;
@@ -385,9 +396,10 @@ main .main-content .main-musics .musics .main-player .music-header .services {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: 20px;
 }
 
-main .main-content .main-musics .musics .main-player .music-header .services div {
+main .main-content .main-musics .musics .main-player .music-header .service .services div {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
@@ -454,7 +466,7 @@ main .main-content .main-musics .musics .main-player .music-buttons div {
   height: 44px;
   background-color: #9650E9;
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
 }
 
 main .main-content .main-musics .musics .main-player .music-buttons div p {
@@ -485,6 +497,10 @@ main .main-content .main-musics .musics .main-player .music-text p {
   font-size: 14px;
   line-height: 16px;
   color: #323232;
+}
+
+main .main-content .main-musics .musics .main-player .music-text p a {
+  margin-top: 5px;
 }
 
 main .main-content .main-musics .musics h1 {
@@ -822,10 +838,9 @@ footer .footer-content .ad {
   position: sticky;
   bottom: 0;
   margin-top: 50px;
-  width: 80%;
+  width: 100%;
   height: 202px;
   background-color: #A47ECF;
-  border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -839,7 +854,6 @@ footer .footer-content .ad {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: none;
 }
 
 .player .music-info {
@@ -938,17 +952,17 @@ footer .footer-content .ad {
   cursor: pointer;
 }
 
-.player .player-length .length {
+.player .player-length .play-length {
   width: 600px;
   height: 5px;
   background-color: white;
   border-radius: 6px;
 }
 
-.player .player-length .length .e {
+.player .player-length .play-length .played-length {
   width: 20%;
   height: 100%;
-  background-color: red;
+  background-color: #9650E9;
   border-radius: 6px;
 }
 
@@ -962,6 +976,7 @@ footer .footer-content .ad {
     height: -moz-max-content;
     height: max-content;
     padding-bottom: 100px;
+    overflow-x: hidden;
   }
   header {
     width: 95%;
@@ -992,25 +1007,6 @@ footer .footer-content .ad {
     width: 20px;
     height: 2px;
     background-color: #9650E9;
-  }
-  .search {
-    margin: 0 auto;
-    width: 80%;
-    height: 50px;
-    margin-top: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .search .search-icon {
-    position: absolute;
-    right: 50px;
   }
   main {
     width: 80%;
@@ -1054,7 +1050,7 @@ footer .footer-content .ad {
             align-items: center;
   }
   main .main-content .main-musics .musics {
-    width: 726px;
+    width: 100%;
     height: 1000px;
   }
   main .main-content .main-musics .musics .popular-musics {
@@ -1070,6 +1066,17 @@ footer .footer-content .ad {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .main-content .main-musics .musics .popular-musics h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
   }
   main .main-content .main-musics .musics .similar-musics {
     display: -webkit-box;
@@ -1082,7 +1089,20 @@ footer .footer-content .ad {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 1050px;
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: none;
+  }
+  main .main-content .main-musics .musics .similar-musics h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin: 0 auto;
   }
   main .main-content .main-musics .musics .music {
     width: 100%;
@@ -1151,7 +1171,7 @@ footer .footer-content .ad {
     margin-right: 10px;
   }
   main .main-content .main-musics .musics .main-player {
-    width: 592px;
+    width: 90%;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
@@ -1167,9 +1187,12 @@ footer .footer-content .ad {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  main .main-content .main-musics .musics .main-player h3 {
+    display: none;
+  }
   main .main-content .main-musics .musics .main-player .music-header {
     width: 100%;
-    height: 100px;
+    height: 202px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1177,8 +1200,23 @@ footer .footer-content .ad {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  main .main-content .main-musics .musics .main-player .music-header .services {
+  main .main-content .main-musics .musics .main-player .music-header .service {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 80px;
+  }
+  main .main-content .main-musics .musics .main-player .music-header .service .services {
     margin-left: 0px;
     width: 129px;
     height: 103px;
@@ -1192,8 +1230,10 @@ footer .footer-content .ad {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
-  main .main-content .main-musics .musics .main-player .music-header .services div {
+  main .main-content .main-musics .musics .main-player .music-header .service .services div {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -1201,7 +1241,7 @@ footer .footer-content .ad {
     line-height: 19px;
     color: #AFAFAF;
   }
-  main .main-content .main-musics .musics .main-player .music-header .services__info {
+  main .main-content .main-musics .musics .main-player .music-header .service .services__info {
     margin-right: 200px;
     width: 129px;
     height: 103px;
@@ -1215,61 +1255,56 @@ footer .footer-content .ad {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
-  main .main-content .main-musics .musics .main-player .music-header .services__info div {
+  main .main-content .main-musics .musics .main-player .music-header .service .services__info div {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #323232;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   main .main-content .main-musics .musics .main-player .music-buttons {
     width: 100%;
     height: 44px;
-    background-color: yellow;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+  }
+  main .main-content .main-musics .musics .main-player .music-buttons div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 28px;
+    padding-left: 25px;
+    width: 170px;
+    height: 44px;
+    margin: 0 auto;
+    margin-left: 10px;
+  }
+  main .main-content .main-musics .musics .main-player .music-buttons div p {
+    margin-right: 20px;
   }
   main .main-content .main-musics .musics .main-player .music-text {
-    margin-top: 10px;
-    width: 100%;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-  }
-  main .main-content .main-musics .musics .main-player .music-text p {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-    color: #323232;
-  }
-  main .main-content .main-musics .musics h1 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    color: #323232;
-    margin-bottom: 20px;
-  }
-  main .main-content .main-musics .musics h2 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-    margin-bottom: 20px;
-  }
-  main .main-content .main-musics .musics h3 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    color: #323232;
-    margin-bottom: 70px;
+    display: none;
   }
   main .main-content .main-musics .sections {
     width: 330px;
@@ -1436,6 +1471,12 @@ footer .footer-content .ad {
     color: #9650E9;
     cursor: pointer;
   }
+  .search {
+    width: 60%;
+  }
+  .player {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
@@ -1452,71 +1493,7 @@ footer .footer-content .ad {
     display: none;
   }
   .search {
-    margin: 0 auto;
-    width: 80%;
-    height: 50px;
-    margin-top: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
-  }
-  .search input {
-    width: 70%;
-    height: 50px;
-    background-color: #F8F3FE;
-    border-radius: 95px;
-    border: none;
-    padding: 0 19px 0 0;
-    text-align: center;
-    font-family: 'Raleway';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #868686;
-  }
-  .search input::-webkit-input-placeholder {
-    text-align: center;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    color: #868686;
-  }
-  .search input:-ms-input-placeholder {
-    text-align: center;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    color: #868686;
-  }
-  .search input::-ms-input-placeholder {
-    text-align: center;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    color: #868686;
-  }
-  .search input::placeholder {
-    text-align: center;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    color: #868686;
-  }
-  .search .search-icon {
-    position: absolute;
-    right: 300px;
-    cursor: pointer;
+    width: 60%;
   }
   main {
     margin: 0 auto;
@@ -1542,9 +1519,6 @@ footer .footer-content .ad {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: space-between;
-        -ms-flex-align: space-between;
-            align-items: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1590,7 +1564,19 @@ footer .footer-content .ad {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 1050px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: none;
+  }
+  main .main-content .main-musics .musics .similar-musics h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin: 0 auto;
   }
   main .main-content .main-musics .musics .music {
     width: 90%;
@@ -1674,6 +1660,9 @@ footer .footer-content .ad {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  main .main-content .main-musics .musics .main-player h3 {
+    display: none;
   }
   main .main-content .main-musics .musics .main-player .music-header {
     width: 100%;
@@ -1791,186 +1780,8 @@ footer .footer-content .ad {
     line-height: 16px;
     color: #323232;
   }
-  main .main-content .main-musics .musics h1 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 42px;
-    color: #323232;
-    margin-bottom: 20px;
-  }
-  main .main-content .main-musics .musics h2 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-    margin-bottom: 20px;
-  }
-  main .main-content .main-musics .musics h3 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 42px;
-    color: #323232;
-    margin-bottom: 70px;
-  }
   main .main-content .main-musics .sections {
-    width: 330px;
-    height: 1040px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  main .main-content .main-musics .sections .category {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 330px;
-    height: 500px;
-    background-color: rgba(150, 80, 233, 0.05);
-    border-radius: 15px;
-  }
-  main .main-content .main-musics .sections .category h2 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 42px;
-    color: #323232;
-    margin-top: 10px;
-  }
-  main .main-content .main-musics .sections .category ul {
-    height: 361px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 60px;
-    margin-right: 120px;
-  }
-  main .main-content .main-musics .sections .category ul li {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #323232;
-    list-style-image: url(../icons/square.svg);
-    cursor: pointer;
-  }
-  main .main-content .main-musics .sections .new-musics {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 10px;
-    width: 330px;
-    height: 500px;
-    background-color: rgba(150, 80, 233, 0.05);
-    border-radius: 15px;
-  }
-  main .main-content .main-musics .sections .new-musics h2 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 42px;
-    color: #323232;
-    margin-top: 10px;
-  }
-  main .main-content .main-musics .sections .new-musics .music {
-    margin-left: 15px;
-    margin-bottom: 10px;
-    width: 250px;
-    height: 45px;
-    border-radius: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  main .main-content .main-musics .sections .new-musics .music .play-btn {
-    width: 40px;
-    height: 40px;
-    margin-left: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    cursor: pointer;
-  }
-  main .main-content .main-musics .sections .new-musics .music .about-music {
-    width: 127px;
-    height: 40px;
-    position: absolute;
-    margin-left: 80px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    cursor: pointer;
-  }
-  main .main-content .main-musics .sections .new-musics .music .about-music .music-title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #323232;
-  }
-  main .main-content .main-musics .sections .new-musics .music .about-music .music-subtitle {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    color: #323232;
+    display: none;
   }
   main .tabheader {
     width: 100%;
@@ -2032,6 +1843,9 @@ footer .footer-content .ad {
     color: black;
   }
   .modal-category {
+    display: none;
+  }
+  .player {
     display: none;
   }
 }

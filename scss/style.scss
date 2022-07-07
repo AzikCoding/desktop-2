@@ -49,9 +49,10 @@ header{
                         font-size: 16px;
                         line-height: 19px;
                         list-style: none;
-                        transition: 0.4 ease;
                         &:hover a{
                         color:#9650E9;
+                        transition: 0.7s ease;
+
                         }
                         a{
                             color: #9550e96c;
@@ -72,7 +73,7 @@ header{
 }
 .search{    
     margin: 0 auto;
-    width: 80%;
+    width: 40%;
     height: 50px;
     margin-top: 10px;
     display: flex;
@@ -80,8 +81,8 @@ header{
     align-items: center;
     position: relative;
     input{
-        width: 55%;
-        height: 50px;
+        width: 100%;
+        height: 100%;
         background: rgba(230, 218, 244, 0.82);
         border-radius: 95px;
         border: none;
@@ -106,7 +107,8 @@ header{
     }
     .search-icon{
         position: absolute;
-        right: 300px;
+        top: 10px;
+        right: 10px;
         cursor: pointer;
     }
 
@@ -146,6 +148,7 @@ main{
                     flex-direction: column;
                     justify-content: space-between;
                     height: 1050px;
+                    display: none;
                 }
                 .music{
                     width: 90%;
@@ -209,13 +212,17 @@ main{
                         display: flex;
                         justify-content: space-between;
                         margin-bottom: 10px;
+                        .service{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
                         .services{
-                            margin-left: 0px;
                             width: 129px;
                             height: 103px;
                             display: flex;
                             flex-direction: column;
                             justify-content: space-between;
+                            margin-left: 20px;
                             div{
                                 font-family: 'Raleway';
                                 font-style: normal;
@@ -224,6 +231,7 @@ main{
                                 line-height: 19px;
                                 color: #AFAFAF;
                             }
+                        }
                         } 
                         .services__info{
                             margin-right: 200px;
@@ -261,7 +269,7 @@ main{
                             height: 44px;
                             background-color: #9650E9;
                             border-radius: 10px;
-                            padding: 5px;
+                            padding: 10px;
                             p{
                                 font-family: 'Raleway';
                                 font-style: normal;
@@ -286,6 +294,9 @@ main{
                             font-size: 14px;
                             line-height: 16px;
                             color: #323232;
+                            a{
+                                margin-top: 5px;
+                            }
                         }
                     }
 
@@ -441,7 +452,6 @@ main{
             display: flex;
             justify-content: center;
             align-items: center;
-            // display: none;
             .tabheader-items{
                 width: 25%;
                 display: flex;
@@ -531,15 +541,13 @@ footer{
     position: sticky;
     bottom: 0;
     margin-top: 50px;
-    width: 80%;
+    width: 100%;
     height: 202px;
     background-color: #A47ECF;
-    border-radius: 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    display: none;
     .music-info{
         width: 127px;
         height: 40px;
@@ -602,15 +610,15 @@ footer{
             color: #FFFFFF;
             cursor: pointer;
         }
-        .length{
+        .play-length{
             width: 600px;
             height: 5px;
             background-color: white;
             border-radius: 6px;
-            .e{
+            .played-length{
                 width: 20%;
                 height: 100%;
-                background-color: red;
+                background-color: #9650E9;
                 border-radius:6px ;
                 }
         }
@@ -623,8 +631,9 @@ footer{
 @media only screen and (min-width: 375px) and (max-width: 768px) , (max-width: 375px){
 .wrapper{
     height: max-content;
-    // background-color: #E5E5E5;
     padding-bottom: 100px;
+    overflow-x: hidden;
+
 }
 
 header{
@@ -650,21 +659,7 @@ header{
     }
 }
 }
-.search{    
-    margin: 0 auto;
-    width: 80%;
-    height: 50px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .search-icon{
-        position: absolute;
-        right: 50px;
-    }
-
-
-    }
+ 
 main{
     width: 80%;
     height: 1050px;
@@ -683,7 +678,7 @@ main{
             justify-content: space-between;
             align-items: center;
             .musics{
-                width: 726px;
+                width: 100%;
                 height: 1000px;
                 .popular-musics{
                     width: 100%;
@@ -691,12 +686,32 @@ main{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+                    align-items: center;
+                    h1{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #000000;
+                    }
                 }
                 .similar-musics{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    height: 1050px;
+                    width: 100%;
+                    height: max-content;
+                    display: none;
+                    h2{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #000000;
+                        margin: 0 auto;
+                    }
                 }
                 .music{
                     width: 100%;
@@ -748,18 +763,28 @@ main{
                     }
                 }
                 .main-player{
-                    width: 592px;
+                    width: 90%;
                     height:max-content ;
                     margin-bottom: 20px;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+                    h3{
+                    display: none;
+                    }
                     .music-header{
                         width: 100%;
-                        height: 100px;
+                        height: 202px;
                         display: flex;
                         justify-content: space-between;
                         margin-bottom: 10px;
+                        flex-direction: column;
+                        .service{
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 80px;
                         .services{
                             margin-left: 0px;
                             width: 129px;
@@ -767,6 +792,8 @@ main{
                             display: flex;
                             flex-direction: column;
                             justify-content: space-between;
+                            margin-top: 5px;
+                            margin-bottom: 10px;
                             div{
                                 font-family: 'Raleway';
                                 font-style: normal;
@@ -774,6 +801,7 @@ main{
                                 font-size: 16px;
                                 line-height: 19px;
                                 color: #AFAFAF;
+
                             }
                         } 
                         .services__info{
@@ -783,6 +811,8 @@ main{
                             display: flex;
                             flex-direction: column;
                             justify-content: space-between;
+                            margin-top: 5px;
+                            margin-bottom: 10px;
                             div{
                                 font-family: 'Raleway';
                                 font-style: normal;
@@ -790,56 +820,38 @@ main{
                                 font-size: 16px;
                                 line-height: 19px;
                                 color: #323232;
+                                width: max-content;
+
                             }
                         }
-                    
+                        }
                     }
                     .music-buttons{
                         width: 100%;
                         height: 44px;
-                        background-color: yellow;
-                    }
-                    .music-text{
-                        margin-top: 10px;
-                        width: 100%;
-                        height:max-content;
-                        p{
-                            font-family: 'Raleway';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 14px;
-                            line-height: 16px;
-                            color: #323232;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: 20px;
+                        div{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding-right: 28px;
+                            padding-left: 25px;
+                            width: 170px;
+                            height: 44px;
+                            margin: 0 auto;       
+                            margin-left: 10px;
+                            p{
+                                margin-right: 20px;
+                            }
                         }
                     }
+                    .music-text{
+                        display: none;
+                    }
 
-                }
-                h1{
-                    font-family: 'Raleway';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 36px;
-                    line-height: 42px;  
-                    color: #323232;
-                    margin-bottom:20px;
-                }
-                h2{
-                    font-family: 'Inter';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 19px;
-                    color: #000000;
-                    margin-bottom: 20px;
-                }
-                h3{
-                    font-family: 'Raleway';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 36px;
-                    line-height: 42px;
-                    color: #323232;
-                    margin-bottom: 70px;
                 }
             }
             .sections{
@@ -963,7 +975,12 @@ footer{
         cursor: pointer;
     }
 }
-
+.search{
+    width: 60%;
+} 
+.player{
+    display: none;  
+}  
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px){
     header{
@@ -978,46 +995,10 @@ footer{
             }
         }
     }
-    .search{    
-        margin: 0 auto;
-        width: 80%;
-        height: 50px;
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        input{
-            width: 70%;
-            height: 50px;
-            background-color: #F8F3FE;
-            border-radius: 95px;
-            border: none;
-            padding: 0 19px 0 0;
-            text-align: center;
-            font-family: 'Raleway';
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
-            color: #868686;
-            &::placeholder{
-                text-align: center;
-                font-family: 'Raleway';
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 19px;
-                color: #868686;
-            }
-        }
-        .search-icon{
-            position: absolute;
-            right: 300px;
-            cursor: pointer;
-        }
-    
-    
-        }
-    main{
+    .search{
+        width: 60%;
+    }
+     main{
         margin: 0 auto;
         margin-top: 20px;
         width: 80%;
@@ -1030,7 +1011,6 @@ footer{
             height: 100%;
             display: flex;
             justify-content: space-between ;
-            align-items: space-between;
             flex-direction: column;
             .main-musics{
                 display: flex;
@@ -1050,7 +1030,17 @@ footer{
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-                        height: 1050px;
+                        height: max-content;
+                        display: none;
+                        h2{
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #000000;
+                            margin: 0 auto;
+                        }
                     }
                     .music{
                         width: 90%;
@@ -1108,6 +1098,9 @@ footer{
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
+                        h3{
+                            display: none;
+                        }
                         .music-header{
                             width: 100%;
                             height: 100px;
@@ -1195,142 +1188,10 @@ footer{
                         }
     
                     }
-                    h1{
-                        font-family: 'Raleway';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 25px;
-                        line-height: 42px;  
-                        color: #323232;
-                        margin-bottom:20px;
-                    }
-                    h2{
-                        font-family: 'Inter';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 19px;
-                        color: #000000;
-                        margin-bottom: 20px;
-                    }
-                    h3{
-                        font-family: 'Raleway';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 16px;
-                        line-height: 42px;
-                        color: #323232;
-                        margin-bottom: 70px;
-                    }
                 }
-                .sections{
-                    width: 330px;
-                    height: 1040px;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    .category{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        align-items: center;
-                        width: 330px;
-                        height: 500px;
-                        background-color: rgba(150, 80, 233, 0.05);
-                        border-radius: 15px;
-                        h2{
-                            font-family: 'Raleway';
-                            font-style: normal;
-                            font-weight: 700;
-                            font-size: 26px;
-                            line-height: 42px;
-                            color: #323232;
-                            margin-top: 10px;
-                        }
-                            ul{
-                                height: 361px;
-                                display: flex;
-                                justify-content: space-between;
-                                flex-direction: column;
-                                margin-bottom: 60px;
-                                margin-right: 120px;
-                                li{
-                                    font-family: 'Raleway';
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    font-size: 16px;
-                                    line-height: 19px;
-                                    color: #323232;
-                                    list-style-image:url(../icons/square.svg);  
-                                    cursor: pointer;                          
-                                }
-                            
-                            }
-                    }
-                    .new-musics{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        align-items: center;    
-                        margin-top: 10px;
-                        width: 330px;
-                        height: 500px;
-                        background-color: rgba(150, 80, 233, 0.05);
-                        border-radius: 15px;
-                        h2{
-                            font-family: 'Raleway';
-                            font-style: normal;
-                            font-weight: 700;
-                            font-size: 26px;
-                            line-height: 42px;
-                            color: #323232;
-                            margin-top: 10px;
-                        }
-                        .music{ 
-                            margin-left: 15px;
-                            margin-bottom: 10px;  
-                            width: 250px;
-                            height: 45px;  
-                            border-radius: 10px;
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            .play-btn{
-                                width: 40px;
-                                height: 40px;
-                                margin-left: 10px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                cursor: pointer;
-                            }
-                            .about-music{
-                                width: 127px;
-                                height: 40px;
-                                position: absolute;
-                                margin-left: 80px;
-                                display: flex;
-                                flex-direction: column;
-                                cursor: pointer;
-                                .music-title{
-                                    font-family: 'Inter';
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    font-size: 16px;
-                                    line-height: 19px;
-                                    color: #323232;
-                                }
-                                .music-subtitle{
-                                    font-family: 'Inter';
-                                    font-style: normal;
-                                    font-weight: 700;
-                                    font-size: 16px;
-                                    line-height: 19px;
-                                    color: #323232;
-                                }
-                                }
-                            }
-                        }
-                    }
+              .sections{
+                display: none;
+              }
                     
                 }
             }
@@ -1376,6 +1237,9 @@ footer{
     }
  .modal-category{
     display: none;
- }   
+ } 
+ .player{
+    display: none;
+ }  
     }
 
