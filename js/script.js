@@ -1,10 +1,12 @@
 let playBtn = document.querySelectorAll('.play-btn'),
     similarContent =document.querySelector('.similar-musics') ,
-    popularContent =document.querySelector('.popular-musics') ;
+    popularContent =document.querySelector('.popular-musics') ,
+    playerContent =document.querySelector('.player');
 playBtn.forEach(function(item){
     item.addEventListener('click' , function(){
         similarContent.style.display='flex';
         popularContent.style.display='none';
+        playerContent.style.display ='none';
     })
 })
 
