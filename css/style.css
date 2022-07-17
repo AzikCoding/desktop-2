@@ -327,7 +327,7 @@ main .main-content .main-musics .musics .music .download-btn {
   margin-right: 10px;
 }
 main .main-content .main-musics .musics .main-player {
-  width: 592px;
+  width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -455,6 +455,7 @@ main .main-content .main-musics .musics .main-player .music-buttons .download {
 }
 main .main-content .main-musics .musics .main-player .music-text {
   margin-top: 10px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -468,7 +469,6 @@ main .main-content .main-musics .musics .main-player .music-text {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 20px;
 }
 main .main-content .main-musics .musics .main-player .music-text p {
   width: 100%;
