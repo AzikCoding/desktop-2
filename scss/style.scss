@@ -1256,7 +1256,9 @@ footer{
                         flex-direction: column;
                         justify-content: space-between;
                         h3{
-                            display: none;
+                            // display: none;
+                            font-size: 18px;
+                            margin: 0;
                         }
                         .music-header{
                             width: 100%;

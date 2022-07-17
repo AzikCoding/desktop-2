@@ -1821,7 +1821,8 @@ footer .footer-content .ad {
             justify-content: space-between;
   }
   main .main-content .main-musics .musics .main-player h3 {
-    display: none;
+    font-size: 18px;
+    margin: 0;
   }
   main .main-content .main-musics .musics .main-player .music-header {
     width: 100%;
