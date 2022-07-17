@@ -5,7 +5,8 @@ let playBtn = document.querySelectorAll('.play-btn'),
 playBtn.forEach(function(item){
     item.addEventListener('click' , function(){
         similarContent.style.display='flex';
-        similarContent.style.paddingBottom='200px';
+        footer.style.marginTop ='450px';
+        Tab.style.paddingTop ='170px';
         popularContent.style.display='none';
         playerContent.style.display ='none';
     })
@@ -26,4 +27,9 @@ let toggle = document.querySelector('.toggle'),
     })
 
 
-    
+ //tab
+ let Tab = document.querySelector('.tabheader');
+
+ //footer
+ let footer = document.querySelector('footer');
+ 
