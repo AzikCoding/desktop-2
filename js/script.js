@@ -5,6 +5,7 @@ let playBtn = document.querySelectorAll('.play-btn'),
 playBtn.forEach(function(item){
     item.addEventListener('click' , function(){
         similarContent.style.display='flex';
+        similarContent.style.paddingBottom='200px';
         popularContent.style.display='none';
         playerContent.style.display ='none';
     })

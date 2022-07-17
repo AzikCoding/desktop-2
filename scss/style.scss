@@ -856,7 +856,16 @@ main{
                         }
                     }
                     .music-text{
-                        display: none;
+                        display: block;
+                        display: flex;
+                        width: max-content;
+                        height: 100px;
+                        align-items: center;
+                        flex-direction: column;
+                        overflow-x: scroll;
+                        p{
+                            margin-top: 10px;
+                        }
                     }
 
                 }
