@@ -11,7 +11,6 @@
     align-items: center;
     flex-direction: column;
     background: #F8F3FE;
-    height:100%;
 }
 header{
     width: 80%;
@@ -632,6 +631,9 @@ footer{
 .modal-category{
     display: none;
 }
+.player-mobile{
+    display: none;
+}
 @media only screen and (min-width: 375px) and (max-width: 768px) , (max-width: 375px){
 .wrapper{
     height: max-content;
@@ -953,8 +955,9 @@ main{
         }
 }
 footer{
+    padding-bottom:300px;
     .footer-content{
-        margin-top: 40px;
+        // margin-top: 40px;
         height: 250px ;
         display: flex;
         justify-content: space-between;
@@ -1025,32 +1028,94 @@ footer{
     }
 }
 .player{
-    width: 100%;
+    display: none;
+}
+.player-mobile{
     position: fixed;
-    height: 120px;
-    padding-bottom: 20px;
-    border-radius: 0;
-    .music-info{
-        div:last-child{
-            margin-bottom: 40px;
+    bottom: 0;
+    width: 90%;
+    height: 140px;
+    background-color: #A47ECF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    .music-btns{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        .music-info{
+            margin-top: 10px;
+            .music-name{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 15px;
+                color: #FFFFFF;
+            }
+            .music-title{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                color: #FFFFFF;
+                margin-left: 10px;
+            }
+        }
+        .music-button{
+            margin-top: 5px;
+            .repeat{
+                margin-right: 15px;
+            }
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
         }
     }
-    .player-buttons{
-padding-bottom: 20px;padding-top: 20px;        
-        .repeat{
-            order:2;
-            margin-left: 120px;  
-        }
-        .center{
-            order: 0    ;
-        }
-        .download{
-            order: 3;
+    .play-buttons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div{
+            margin-left: 5px;
         }
     }
     .player-length{
-        display: none;
+        width: 80%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        p{
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 26px;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+        .play-length{
+            width: 600px;
+            height: 5px;
+            background-color: white;
+            border-radius: 6px;
+            .played-length{
+                width: 20%;
+                height: 100%;
+                background-color: #9650E9;
+                border-radius:6px ;
+                }
+        }
+
     }
+}
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px){
     header{
@@ -1314,5 +1379,3 @@ padding-bottom: 20px;padding-top: 20px;
     }
  }  
     }
-
-}

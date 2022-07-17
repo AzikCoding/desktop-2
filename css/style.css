@@ -22,7 +22,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background: #F8F3FE;
-  height: 100%;
 }
 
 header {
@@ -908,6 +907,10 @@ footer .footer-content .ad {
   display: none;
 }
 
+.player-mobile {
+  display: none;
+}
+
 @media only screen and (min-width: 375px) and (max-width: 768px), (max-width: 375px) {
   .wrapper {
     height: -webkit-max-content;
@@ -1376,8 +1379,10 @@ footer .footer-content .ad {
             align-items: center;
     color: black;
   }
+  footer {
+    padding-bottom: 300px;
+  }
   footer .footer-content {
-    margin-top: 40px;
     height: 250px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1477,40 +1482,124 @@ footer .footer-content .ad {
     cursor: pointer;
   }
   .player {
-    width: 100%;
-    position: fixed;
-    height: 120px;
-    padding-bottom: 20px;
-    border-radius: 0;
-  }
-  .player .music-info div:last-child {
-    margin-bottom: 40px;
-  }
-  .player .player-buttons {
-    padding-bottom: 20px;
-    padding-top: 20px;
-  }
-  .player .player-buttons .repeat {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    margin-left: 120px;
-  }
-  .player .player-buttons .center {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-  }
-  .player .player-buttons .download {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-  .player .player-length {
     display: none;
   }
+  .player-mobile {
+    position: fixed;
+    bottom: 0;
+    width: 90%;
+    height: 140px;
+    background-color: #A47ECF;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .player-mobile .music-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80%;
+  }
+  .player-mobile .music-btns .music-info {
+    margin-top: 10px;
+  }
+  .player-mobile .music-btns .music-info .music-name {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 15px;
+    color: #FFFFFF;
+  }
+  .player-mobile .music-btns .music-info .music-title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    color: #FFFFFF;
+    margin-left: 10px;
+  }
+  .player-mobile .music-btns .music-button {
+    margin-top: 5px;
+  }
+  .player-mobile .music-btns .music-button .repeat {
+    margin-right: 15px;
+  }
+  .player-mobile .music-btns div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .player-mobile .play-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .player-mobile .play-buttons div {
+    margin-left: 5px;
+  }
+  .player-mobile .player-length {
+    width: 80%;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .player-mobile .player-length p {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .player-mobile .player-length .play-length {
+    width: 600px;
+    height: 5px;
+    background-color: white;
+    border-radius: 6px;
+  }
+  .player-mobile .player-length .play-length .played-length {
+    width: 20%;
+    height: 100%;
+    background-color: #9650E9;
+    border-radius: 6px;
+  }
 }
-@media only screen and (min-width: 375px) and (max-width: 768px) and (min-width: 768px) and (max-width: 1200px), only screen and (max-width: 375px) and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   header {
     width: 95%;
     height: 55px;
