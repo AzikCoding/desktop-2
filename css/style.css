@@ -1350,8 +1350,8 @@ footer .footer-content .ad {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 12px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     background: rgba(230, 218, 244, 0.82);
     font-family: "Raleway";
     font-style: normal;
@@ -1366,8 +1366,8 @@ footer .footer-content .ad {
   }
   main .main-content .tabheader .tabheader-items .none {
     background-color: rgba(150, 80, 233, 0.1);
-    width: 40px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
