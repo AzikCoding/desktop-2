@@ -289,8 +289,7 @@ main{
                         justify-content: center;
                         align-items: center;
                         flex-direction: column;
-                        background-color: red;
-                        padding: 20px;width: 90%;
+                        padding: 20px;
                         p{
                             width: 100%;
                             font-family: 'Raleway';
@@ -299,7 +298,7 @@ main{
                             font-size: 14px;
                             line-height: 16px;
                             color: #323232;
-
+background: red;
                             display: flex;
                             justify-content: center;
                             height:150px;
