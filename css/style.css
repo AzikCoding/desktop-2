@@ -468,6 +468,7 @@ main .main-content .main-musics .musics .main-player .music-text {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: red;
   padding: 20px;
   width: 90%;
 }
