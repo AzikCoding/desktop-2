@@ -818,6 +818,7 @@ footer .footer-content .ad {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 10px;
 }
 .player .music-info .player-name {
   margin-top: 20px;
@@ -949,10 +950,10 @@ footer .footer-content .ad {
     background-color: #9650E9;
   }
   .search {
-    width: 60%;
+    min-width: 80%;
   }
   main {
-    width: 80%;
+    width: 90%;
     height: 1050px;
     display: -webkit-box;
     display: -ms-flexbox;
