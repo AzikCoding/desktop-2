@@ -40,7 +40,6 @@ header {
   margin: 0 auto;
   margin-top: 20px;
 }
-
 header .header-content {
   width: 100%;
   height: 100%;
@@ -54,18 +53,15 @@ header .header-content {
       -ms-flex-align: center;
           align-items: center;
 }
-
 header .header-content .header-logo {
   width: 50px;
   height: 50px;
   cursor: pointer;
 }
-
 header .header-content .header-logo img {
   width: 100%;
   height: 100%;
 }
-
 header .header-content nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,39 +70,33 @@ header .header-content nav {
       -ms-flex-align: center;
           align-items: center;
 }
-
 header .header-content nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
 }
-
 header .header-content nav ul li {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   list-style: none;
 }
-
 header .header-content nav ul li:hover a {
   color: #9650E9;
   -webkit-transition: 0.7s ease;
   transition: 0.7s ease;
 }
-
 header .header-content nav ul li a {
-  color: #9550e96c;
+  color: rgba(149, 80, 233, 0.4235294118);
   text-decoration: none;
 }
-
 header .header-content nav ul .active {
   border-bottom: 1px solid #9650E9;
   color: #9650E9;
 }
-
 header .header-content .toggle {
   display: none;
 }
@@ -127,7 +117,6 @@ header .header-content .toggle {
           align-items: center;
   position: relative;
 }
-
 .search input {
   padding-left: 25px;
   width: 100%;
@@ -137,57 +126,61 @@ header .header-content .toggle {
   border: none;
   padding: 0 19px 0 0;
   text-align: center;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #868686;
 }
-
 .search input::-webkit-input-placeholder {
   text-align: center;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #868686;
 }
-
+.search input::-moz-placeholder {
+  text-align: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #868686;
+}
 .search input:-ms-input-placeholder {
   text-align: center;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #868686;
 }
-
 .search input::-ms-input-placeholder {
   text-align: center;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #868686;
 }
-
 .search input::placeholder {
   text-align: center;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #868686;
 }
-
 .search .search-icon {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 25px;
   cursor: pointer;
 }
 
@@ -206,7 +199,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
-
 main .main-content {
   width: 100%;
   height: 100%;
@@ -224,7 +216,6 @@ main .main-content {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 main .main-content .main-musics {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,12 +227,10 @@ main .main-content .main-musics {
       -ms-flex-align: center;
           align-items: center;
 }
-
 main .main-content .main-musics .musics {
   width: 100%;
   height: 1000px;
 }
-
 main .main-content .main-musics .musics .popular-musics {
   width: 100%;
   height: 100%;
@@ -256,7 +245,6 @@ main .main-content .main-musics .musics .popular-musics {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 main .main-content .main-musics .musics .similar-musics {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,7 +259,6 @@ main .main-content .main-musics .musics .similar-musics {
   height: 1050px;
   display: none;
 }
-
 main .main-content .main-musics .musics .music {
   width: 90%;
   padding: 10px;
@@ -288,7 +275,6 @@ main .main-content .main-musics .musics .music {
           align-items: center;
   margin-bottom: 10px;
 }
-
 main .main-content .main-musics .musics .music .play-btn {
   width: 40px;
   height: 40px;
@@ -304,9 +290,10 @@ main .main-content .main-musics .musics .music .play-btn {
           align-items: center;
   cursor: pointer;
 }
-
 main .main-content .main-musics .musics .music .about-music {
-  width: 127px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   height: 40px;
   position: absolute;
   margin-left: 80px;
@@ -319,31 +306,27 @@ main .main-content .main-musics .musics .music .about-music {
           flex-direction: column;
   cursor: pointer;
 }
-
 main .main-content .main-musics .musics .music .about-music .music-title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #323232;
 }
-
 main .main-content .main-musics .musics .music .about-music .music-subtitle {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   color: #323232;
 }
-
 main .main-content .main-musics .musics .music .download-btn {
   width: 25px;
   height: 32px;
   margin-right: 10px;
 }
-
 main .main-content .main-musics .musics .main-player {
   width: 592px;
   height: -webkit-max-content;
@@ -361,7 +344,6 @@ main .main-content .main-musics .musics .main-player {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 main .main-content .main-musics .musics .main-player .music-header {
   width: 100%;
   height: 100px;
@@ -373,7 +355,6 @@ main .main-content .main-musics .musics .main-player .music-header {
           justify-content: space-between;
   margin-bottom: 10px;
 }
-
 main .main-content .main-musics .musics .main-player .music-header .service {
   width: 100%;
   display: -webkit-box;
@@ -383,7 +364,6 @@ main .main-content .main-musics .musics .main-player .music-header .service {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 main .main-content .main-musics .musics .main-player .music-header .service .services {
   width: 129px;
   height: 103px;
@@ -399,16 +379,14 @@ main .main-content .main-musics .musics .main-player .music-header .service .ser
           justify-content: space-between;
   margin-left: 20px;
 }
-
 main .main-content .main-musics .musics .main-player .music-header .service .services div {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #AFAFAF;
 }
-
 main .main-content .main-musics .musics .main-player .music-header .services__info {
   margin-right: 200px;
   width: 129px;
@@ -424,16 +402,14 @@ main .main-content .main-musics .musics .main-player .music-header .services__in
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 main .main-content .main-musics .musics .main-player .music-header .services__info div {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #323232;
 }
-
 main .main-content .main-musics .musics .main-player .music-buttons {
   width: 100%;
   height: 44px;
@@ -447,12 +423,10 @@ main .main-content .main-musics .musics .main-player .music-buttons {
       -ms-flex-align: center;
           align-items: center;
 }
-
 main .main-content .main-musics .musics .main-player .music-buttons a {
   color: white;
   text-decoration: none;
 }
-
 main .main-content .main-musics .musics .main-player .music-buttons div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -469,43 +443,38 @@ main .main-content .main-musics .musics .main-player .music-buttons div {
   border-radius: 10px;
   padding: 10px;
 }
-
 main .main-content .main-musics .musics .main-player .music-buttons div p {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
 }
-
 main .main-content .main-musics .musics .main-player .music-buttons .download {
   margin-right: 230px;
 }
-
 main .main-content .main-musics .musics .main-player .music-text {
   margin-top: 10px;
   width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  overflow: scroll;
 }
-
 main .main-content .main-musics .musics .main-player .music-text p {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
   color: #323232;
 }
-
 main .main-content .main-musics .musics .main-player .music-text p a {
   margin-top: 5px;
 }
-
 main .main-content .main-musics .musics h1 {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -513,9 +482,8 @@ main .main-content .main-musics .musics h1 {
   color: #323232;
   margin-bottom: 20px;
 }
-
 main .main-content .main-musics .musics h2 {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -523,9 +491,8 @@ main .main-content .main-musics .musics h2 {
   color: #000000;
   margin-bottom: 20px;
 }
-
 main .main-content .main-musics .musics h3 {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -533,7 +500,6 @@ main .main-content .main-musics .musics h3 {
   color: #323232;
   margin-bottom: 70px;
 }
-
 main .main-content .main-musics .sections {
   width: 330px;
   height: 1000px;
@@ -545,7 +511,6 @@ main .main-content .main-musics .sections {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 main .main-content .main-musics .sections .category {
   margin-top: 60px;
   display: -webkit-box;
@@ -567,9 +532,8 @@ main .main-content .main-musics .sections .category {
   border-radius: 15px;
   padding: 5px;
 }
-
 main .main-content .main-musics .sections .category h2 {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -577,7 +541,6 @@ main .main-content .main-musics .sections .category h2 {
   color: #323232;
   margin-top: 10px;
 }
-
 main .main-content .main-musics .sections .category ul {
   height: 361px;
   display: -webkit-box;
@@ -593,9 +556,8 @@ main .main-content .main-musics .sections .category ul {
   margin-bottom: 60px;
   margin-right: 120px;
 }
-
 main .main-content .main-musics .sections .category ul li {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -604,7 +566,6 @@ main .main-content .main-musics .sections .category ul li {
   list-style-image: url(../icons/square.svg);
   cursor: pointer;
 }
-
 main .main-content .main-musics .sections .new-musics {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -628,10 +589,9 @@ main .main-content .main-musics .sections .new-musics {
   border-radius: 15px;
   padding: 5px;
 }
-
 main .main-content .main-musics .sections .new-musics h2 {
   margin-bottom: 35px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -639,7 +599,6 @@ main .main-content .main-musics .sections .new-musics h2 {
   color: #323232;
   margin-top: 10px;
 }
-
 main .main-content .main-musics .sections .new-musics .music {
   margin-left: 15px;
   margin-bottom: 10px;
@@ -656,7 +615,6 @@ main .main-content .main-musics .sections .new-musics .music {
       -ms-flex-align: center;
           align-items: center;
 }
-
 main .main-content .main-musics .sections .new-musics .music .play-btn {
   width: 40px;
   height: 40px;
@@ -672,7 +630,6 @@ main .main-content .main-musics .sections .new-musics .music .play-btn {
           align-items: center;
   cursor: pointer;
 }
-
 main .main-content .main-musics .sections .new-musics .music .about-music {
   width: 127px;
   height: 40px;
@@ -687,25 +644,22 @@ main .main-content .main-musics .sections .new-musics .music .about-music {
           flex-direction: column;
   cursor: pointer;
 }
-
 main .main-content .main-musics .sections .new-musics .music .about-music .music-title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #323232;
 }
-
 main .main-content .main-musics .sections .new-musics .music .about-music .music-subtitle {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   color: #323232;
 }
-
 main .tabheader {
   margin-top: 150px;
   width: 100%;
@@ -720,7 +674,6 @@ main .tabheader {
       -ms-flex-align: center;
           align-items: center;
 }
-
 main .tabheader .tabheader-items {
   width: 25%;
   display: -webkit-box;
@@ -730,7 +683,6 @@ main .tabheader .tabheader-items {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 main .tabheader .tabheader-items .tabheader__item {
   border-radius: 2px;
   display: -webkit-box;
@@ -745,7 +697,7 @@ main .tabheader .tabheader-items .tabheader__item {
   width: 24px;
   height: 24px;
   background: rgba(230, 218, 244, 0.82);
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -753,11 +705,9 @@ main .tabheader .tabheader-items .tabheader__item {
   color: #FFFFFF;
   cursor: pointer;
 }
-
 main .tabheader .tabheader-items .active {
   background-color: #9650E9;
 }
-
 main .tabheader .tabheader-items .none {
   background-color: rgba(150, 80, 233, 0.1);
   width: 40px;
@@ -789,7 +739,6 @@ footer {
           align-items: center;
   padding-bottom: 20px;
 }
-
 footer .footer-content {
   width: 100%;
   height: 100%;
@@ -803,9 +752,8 @@ footer .footer-content {
       -ms-flex-align: center;
           align-items: center;
 }
-
 footer .footer-content nav ul li {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -813,20 +761,16 @@ footer .footer-content nav ul li {
   color: #323232;
   list-style: none;
 }
-
 footer .footer-content nav ul li:not(:last-child) {
   margin-bottom: 10px;
 }
-
 footer .footer-content nav ul li a {
   color: #323232;
   text-decoration: none;
 }
-
 footer .footer-content .footer-logo {
   cursor: pointer;
 }
-
 footer .footer-content .ad {
   width: 246px;
   height: 46px;
@@ -836,7 +780,6 @@ footer .footer-content .ad {
 }
 
 .player {
-  position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   margin-top: 50px;
@@ -860,7 +803,6 @@ footer .footer-content .ad {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .player .music-info {
   width: 127px;
   height: 40px;
@@ -878,10 +820,9 @@ footer .footer-content .ad {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 .player .music-info .player-name {
   margin-top: 20px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -889,10 +830,9 @@ footer .footer-content .ad {
   color: #FFFFFF;
   cursor: pointer;
 }
-
 .player .music-info .player-artist {
   margin-top: 5px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -900,7 +840,6 @@ footer .footer-content .ad {
   color: #FFFFFF;
   cursor: pointer;
 }
-
 .player .player-buttons {
   width: 70%;
   height: 40px;
@@ -914,7 +853,6 @@ footer .footer-content .ad {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .player .player-buttons .center {
   width: 40%;
   height: 100%;
@@ -928,11 +866,9 @@ footer .footer-content .ad {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .player .player-buttons div {
   cursor: pointer;
 }
-
 .player .player-length {
   width: 80%;
   height: 30px;
@@ -946,9 +882,8 @@ footer .footer-content .ad {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .player .player-length p {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -956,14 +891,12 @@ footer .footer-content .ad {
   color: #FFFFFF;
   cursor: pointer;
 }
-
 .player .player-length .play-length {
   width: 600px;
   height: 5px;
   background-color: white;
   border-radius: 6px;
 }
-
 .player .player-length .play-length .played-length {
   width: 20%;
   height: 100%;
@@ -980,7 +913,6 @@ footer .footer-content .ad {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
-    padding-bottom: 100px;
     overflow-x: hidden;
   }
   header {
@@ -1012,6 +944,9 @@ footer .footer-content .ad {
     width: 20px;
     height: 2px;
     background-color: #9650E9;
+  }
+  .search {
+    width: 60%;
   }
   main {
     width: 80%;
@@ -1076,7 +1011,7 @@ footer .footer-content .ad {
             align-items: center;
   }
   main .main-content .main-musics .musics .popular-musics h1 {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -1101,7 +1036,7 @@ footer .footer-content .ad {
     display: none;
   }
   main .main-content .main-musics .musics .similar-musics h2 {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -1143,7 +1078,6 @@ footer .footer-content .ad {
   main .main-content .main-musics .musics .music .about-music {
     width: 127px;
     height: 40px;
-    position: absolute;
     margin-left: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1155,7 +1089,7 @@ footer .footer-content .ad {
     cursor: pointer;
   }
   main .main-content .main-musics .musics .music .about-music .music-title {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1163,7 +1097,7 @@ footer .footer-content .ad {
     color: #323232;
   }
   main .main-content .main-musics .musics .music .about-music .music-subtitle {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -1240,7 +1174,7 @@ footer .footer-content .ad {
     margin-right: 40px;
   }
   main .main-content .main-musics .musics .main-player .music-header .service .services div {
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1265,7 +1199,7 @@ footer .footer-content .ad {
     margin-bottom: 10px;
   }
   main .main-content .main-musics .musics .main-player .music-header .service .services__info div {
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1343,7 +1277,7 @@ footer .footer-content .ad {
     border-radius: 15px;
   }
   main .main-content .main-musics .sections .category h2 {
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -1367,7 +1301,7 @@ footer .footer-content .ad {
     margin-right: 120px;
   }
   main .main-content .main-musics .sections .category ul li {
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1413,10 +1347,10 @@ footer .footer-content .ad {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 24px;
+    width: 12px;
     height: 24px;
     background: rgba(230, 218, 244, 0.82);
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1443,6 +1377,7 @@ footer .footer-content .ad {
     color: black;
   }
   footer .footer-content {
+    margin-top: 40px;
     height: 250px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1497,7 +1432,7 @@ footer .footer-content .ad {
     margin-left: 16px;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -1524,7 +1459,7 @@ footer .footer-content .ad {
   }
   .modal-category ul li {
     margin-top: 10px;
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1541,15 +1476,41 @@ footer .footer-content .ad {
     color: #9650E9;
     cursor: pointer;
   }
-  .search {
-    width: 60%;
-  }
   .player {
+    width: 100%;
+    position: fixed;
+    height: 120px;
+    padding-bottom: 20px;
+    border-radius: 0;
+  }
+  .player .music-info div:last-child {
+    margin-bottom: 40px;
+  }
+  .player .player-buttons {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .player .player-buttons .repeat {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: 120px;
+  }
+  .player .player-buttons .center {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .player .player-buttons .download {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .player .player-length {
     display: none;
   }
 }
-
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 375px) and (max-width: 768px) and (min-width: 768px) and (max-width: 1200px), only screen and (max-width: 375px) and (min-width: 768px) and (max-width: 1200px) {
   header {
     width: 95%;
     height: 55px;
@@ -1640,7 +1601,7 @@ footer .footer-content .ad {
     display: none;
   }
   main .main-content .main-musics .musics .similar-musics h2 {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -1694,7 +1655,7 @@ footer .footer-content .ad {
     cursor: pointer;
   }
   main .main-content .main-musics .musics .music .about-music .music-title {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1702,7 +1663,7 @@ footer .footer-content .ad {
     color: #323232;
   }
   main .main-content .main-musics .musics .music .about-music .music-subtitle {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -1761,7 +1722,7 @@ footer .footer-content .ad {
             justify-content: space-between;
   }
   main .main-content .main-musics .musics .main-player .music-header .services div {
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1784,7 +1745,7 @@ footer .footer-content .ad {
             justify-content: space-between;
   }
   main .main-content .main-musics .musics .main-player .music-header .services__info div {
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1825,7 +1786,7 @@ footer .footer-content .ad {
     padding: 5px;
   }
   main .main-content .main-musics .musics .main-player .music-buttons div p {
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1843,7 +1804,7 @@ footer .footer-content .ad {
     height: max-content;
   }
   main .main-content .main-musics .musics .main-player .music-text p {
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1889,7 +1850,7 @@ footer .footer-content .ad {
     width: 24px;
     height: 24px;
     background-color: #9650E9;
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1914,8 +1875,7 @@ footer .footer-content .ad {
   .modal-category {
     display: none;
   }
-  .player {
-    display: none;
+  .player .player-buttons {
+    margin-top: 20px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
